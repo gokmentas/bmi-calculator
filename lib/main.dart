@@ -33,7 +33,7 @@ class _InputPageState extends State<InputPage> {
         title: const Text("BMI CALCULATOR"),
       ),
       body: const Center(
-        child: Text("Body Text"),
+        child: Text("Body Tessxt"),
       ),
       floatingActionButton: FloatingActionButton(
         // shape: const CircleBorder(),
