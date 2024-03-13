@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'theme.dart';
 
 void main() {
   runApp(const BMICalculator());
@@ -11,8 +10,11 @@ class BMICalculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: myTheme,
-      home: const InputPage(),
+      // theme: ThemeData(
+      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+      //   useMaterial3: true,
+      // ),
+      home: InputPage(),
     );
   }
 }
@@ -29,7 +31,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).primaryColor,
+        // backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("BMI CALCULATOR"),
       ),
       body: const Center(
@@ -37,7 +39,6 @@ class _InputPageState extends State<InputPage> {
       ),
       floatingActionButton: FloatingActionButton(
         // shape: const CircleBorder(),
-        // backgroundColor: Theme.of(context).buttonColor,
         onPressed: () {},
         child: const Icon(Icons.add),
       ),
