@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+const genderCardColor = Color(0xFF1D1F33);
+const cardColor = Color(0xFF111428);
+const bottomContainerColor = Color(0xFFEB1555);
+const bottomContainerHeight = 80.0;
+
 class InputPage extends StatefulWidget {
   const InputPage({super.key});
 
@@ -14,48 +19,54 @@ class _InputPageState extends State<InputPage> {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            "BMI CALC",
+            "BMI CALCULATOR",
           ),
         ),
       ),
-      body: const Column(
+      body: Column(
         children: [
-          Expanded(
+          const Expanded(
             child: Row(
               children: [
                 Expanded(
                   child: ReusableCard(
-                    colour: Color(0xFF111428),
+                    colour: genderCardColor,
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    colour: Color(0xFF111428),
+                    colour: genderCardColor,
                   ),
                 ),
               ],
             ),
           ),
-          Expanded(
+          const Expanded(
             child: ReusableCard(
-              colour: Color(0xFF111428),
+              colour: cardColor,
             ),
           ),
-          Expanded(
+          const Expanded(
             child: Row(
               children: [
                 Expanded(
                   child: ReusableCard(
-                    colour: Color(0xFF111428),
+                    colour: cardColor,
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    colour: Color(0xFF111428),
+                    colour: cardColor,
                   ),
                 ),
               ],
             ),
+          ),
+          Container(
+            height: bottomContainerHeight,
+            width: double.infinity,
+            margin: const EdgeInsets.only(top: 10.0),
+            color: bottomContainerColor,
           ),
         ],
       ),
