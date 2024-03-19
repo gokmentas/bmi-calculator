@@ -14,7 +14,7 @@ class _InputPageState extends State<InputPage> {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            "BMI CALCULATOR",
+            "BMI CALC",
           ),
         ),
       ),
