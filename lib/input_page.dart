@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'reusable_card.dart';
+import 'icon_context.dart';
 
 const genderCardColor = Color(0xFF1D1F33);
 const cardColor = Color(0xFF111428);
@@ -19,7 +22,7 @@ class _InputPageState extends State<InputPage> {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            "BMI",
+            "BMI CALCULATOR",
           ),
         ),
       ),
@@ -31,11 +34,19 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableCard(
                     colour: genderCardColor,
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.mars,
+                      label: "MALE",
+                    ),
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
                     colour: genderCardColor,
+                    cardChild: IconContent(
+                      icon: FontAwesomeIcons.venus,
+                      label: "FEMALE",
+                    ),
                   ),
                 ),
               ],
@@ -69,23 +80,6 @@ class _InputPageState extends State<InputPage> {
             color: bottomContainerColor,
           ),
         ],
-      ),
-    );
-  }
-}
-
-class ReusableCard extends StatelessWidget {
-  final Color colour;
-  const ReusableCard({super.key, required this.colour});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(15.0),
-      decoration: BoxDecoration(
-        color: colour,
-        // 0xFF1D1F33
-        borderRadius: BorderRadius.circular(10.0),
       ),
     );
   }
