@@ -66,12 +66,20 @@ class _InputPageState extends State<InputPage> {
           const Expanded(
             child: ReusableCard(
               colour: kActiveCardColor,
-              cardChild: Align(
-                alignment: Alignment.topCenter,
-                child: Text(
-                  "HEIGHT",
-                  style: kLabelTextStyle,
-                ),
+              cardChild: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("HEIGHT", style: kLabelTextStyle),
+                  Row(
+                    textBaseline: TextBaseline.alphabetic,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    children: [
+                      Text("180", style: kNumberTextStyle),
+                      Text("cm", style: kLabelTextStyle)
+                    ],
+                  )
+                ],
               ),
             ),
           ),
