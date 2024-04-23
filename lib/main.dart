@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'input_page.dart';
+import 'screens/input_page.dart';
 
 const backGroundColor = Color(0xFF0A0D22);
 const scaffoldBackgroundColor = Color(0xFF0A0D22);
