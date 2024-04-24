@@ -5,7 +5,7 @@
 The objective of this tutorial is to look at how to customise Flutter Widgets to achieve unique user interface designs.
 
 
-## What you will create
+## What did I create
 
 In this tutorial I have build a Body Mass Index Calculator inspired by the beautiful designs made by [Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator). It is a multi screen app with simple functionality but full-on custom styling.
 
